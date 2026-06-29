@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Shield, History, LayoutDashboard, User, LogIn, LogOut, Menu, X } from "lucide-react";
+import { Shield, History, User, LogIn, LogOut, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 
