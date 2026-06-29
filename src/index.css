@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-white text-gray-900 font-sans;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+  }
+  .card-muted {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+  }
+  .input-base {
+    @apply w-full bg-white border border-gray-200 rounded-md px-3 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-gray-400 focus:ring-1 focus:ring-gray-400 transition-colors;
+  }
+  .btn-primary {
+    @apply bg-gray-900 text-white font-medium px-4 py-2.5 rounded-md text-sm hover:bg-gray-700 active:bg-gray-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-white text-gray-700 font-medium px-4 py-2.5 rounded-md text-sm border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-colors;
+  }
+  .label-tag {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-medium;
+  }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+@layer components {
+  .page-header {
+    @apply border-b border-gray-100 pb-6 mb-8;
+  }
+}
